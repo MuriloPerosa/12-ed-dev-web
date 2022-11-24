@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <script>
+        var button = document.getElementById('btnTest');
+        button.addEventListener('click', (ev) => alert('Olá Mundo!'));
+    </script> -->
+</head>
+<body>
+    <button id="btnTest">Click Me</button>
+    <script>
+        console.log('carregando script...')
+        var button = document.getElementById('btnTest');
+        var click  = 1;
+        button.addEventListener('click', (ev) => console.log(click++));
+    </script>
+</body>
+</html>
