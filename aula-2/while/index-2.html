@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let senha = '';
+        let contador = 0;
+        while (senha != '123456' && contador < 3)
+        {
+            senha = prompt('Digite a sua senha: ');
+            contador++;
+            console.log('Tentativa ' + contador);
+        }
+
+        if (senha == '123456') {
+            document.write('Bem-vindo Usuário!');
+        } else {
+            document.write('Senha incorreta! O máximo de tentativas foi atingido! tente novamente mais tarde.');
+        }
+    </script>
+</body>
+</html>

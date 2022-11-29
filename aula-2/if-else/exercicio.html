@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. I</title>
+</head>
+<body>
+    <script>
+        // Ler 3 notas através do document.prompt
+        // Calcular a média das notas
+        // Se a média ficar entre 9 e 10 deve ser mostrado no html a mensagem através do document.write: Aprovado com nota excelente
+        // Se a média ficar entre 7 e 8 (não incluso) deve ser mostrado no html a mensagem através do document.write: Aprovado com uma nota boa
+        // Se a média ficar abaixo de 7 deve ser solicitado uma outra nota através do document.prompt que será a nota de recuperação.
+        // Se a nota de recuperação for maior que 6 deve ser mostrado a mensagem no html através do document.write: Aprovado na recuperação
+        // Se a nota ficar abaixo de 6 deve ser mostrado a mensagem no html através do document.write: Reprovado, estude e pratique mais.
+
+        const nota1 = prompt('Informe a nota 1:');
+        const nota2 = Number.parseFloat(prompt('Informe a nota 2:'));
+        const nota3 = Number.parseFloat(prompt('Informe a nota 3:'));
+
+        if (typeof nota1 != 'number'){
+            alert('erro não foi informado um número válido');
+        }else{
+            const media = (nota1 + nota2 + nota3) / 3;
+    
+            if (media >= 9 && media <= 10) {
+                document.write('Aprovado com nota excelente 🥇🍀🎉✨')
+            } else if (media >= 7 && media < 9) {
+                document.write('Aprovado com uma boa nota ✨✨✨')
+            } else {
+                const notaRecuperacao = Number.parseFloat(prompt('Informe a nota de recuperação:'));
+                if (notaRecuperacao < 6) {
+                    document.write('Reprovado na recuperação ⛔⛔⛔')
+                } else {
+                    document.write('Aprovado na recuperação ✨✨✨')
+                }
+            }
+        }
+
+        if() {
+
+        }
+
+
+    </script>
+</body>
+</html>
