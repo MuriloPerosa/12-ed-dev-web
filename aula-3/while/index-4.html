@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let altura  = 0;
+        let alturas = [];
+
+        let numeroAlturas = Number.parseInt(prompt('Informe o número de alturas que deseja inserir:'));
+
+        while (alturas.length < numeroAlturas)
+        {
+            altura = prompt('Informe a sua altura:');
+            altura = Number.parseFloat(altura);
+                
+            if (!alturas.includes(altura)) {
+                alturas.push(altura);
+            }
+        }
+
+        let maior = alturas[0];
+        let menor = alturas[0];
+
+        for (let i = 0; i < alturas.length; i++) 
+        {
+            if (alturas[i] > maior) {
+                maior = alturas[i];
+            }
+            
+            if (alturas[i] < menor) {
+                menor = alturas[i];
+            }
+        }
+
+        document.write('O Maior é: ' + maior + '<br/>')
+        document.write('O Menor é: ' + menor + '<br/>')
+
+        console.log(alturas);
+    </script>
+</body>
+</html>
