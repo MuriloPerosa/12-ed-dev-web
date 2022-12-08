@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções - Sem retorno e com parametro.</title>
+</head>
+<body>
+    <script>
+        function escrever (texto, repeticoes = 1, isConsole = false) {
+
+            if (isConsole)
+            {
+                for (let i = 0; i < repeticoes; i++) {
+                    console.log(texto)
+                }
+            }
+            else
+            {
+                for (let i = 0; i < repeticoes; i++) {
+                    document.write(texto + ' <br/>');
+                }
+            }
+        }
+
+        escrever('Olá Mundo!', 3, true)
+        escrever('Olá Turma!', 4, false)
+        escrever('Olá Brasilsilsilsil!')
+    </script>
+</body>
+</html>

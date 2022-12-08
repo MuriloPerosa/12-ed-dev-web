@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções - Sem retorno e sem parametro.</title>
+</head>
+<body>
+    <button id="btnEscrever">Escrever</button>
+
+    <script>
+        
+        function mudarCor () {
+            let button = document.getElementById('btnEscrever');
+            button.style.backgroundColor = 'red';
+        }
+
+        let button = document.getElementById('btnEscrever');
+        button.addEventListener('click', mudarCor)
+
+
+        // button.addEventListener('click', function () {
+        //     console.log('abc')
+        // })
+
+        // escreverOla()
+        
+    </script>
+
+</body>
+</html>
